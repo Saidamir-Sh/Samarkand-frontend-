@@ -1,0 +1,58 @@
+@import './partial-styles';
+
+.about {
+    width: 90%;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+}
+
+.about__icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+.icon {
+    width: 20%;
+    padding: 1em;
+    @include glass;
+
+    i {
+        font-size: 3rem;
+        color: $blue;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        padding-top: 2em;
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+    }
+}
+.about__content {
+    display: flex;
+    @include glass;
+    margin-bottom: 5em;
+}
+
+.about__content-text {
+    width: 70%;
+    padding: 5em;
+    padding-right: 0em;
+
+    p {
+        text-align: justify;
+    }
+}
+.about__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+    width: 50%;
+    }
+}

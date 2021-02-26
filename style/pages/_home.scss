@@ -1,0 +1,95 @@
+@import './partial-styles';
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+header {
+    width: 100%; 
+    overflow: hidden;
+    @include glass;
+    position: fixed;
+    z-index: 999;
+}
+.nav-scrolled {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    transition: all .6s ease-out;
+}
+.navbar {
+   width: 90%;
+   margin: 0 auto;
+}
+.navbar__links {
+    width: 30%;
+    right: 0em;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.slide-img {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.slide-img_1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/1.jpg');
+}
+.slide-img_2 {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/2.jpg');
+}
+.slide-img_3 {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/3.jpg');
+}
+.home {
+    position: relative;
+}
+.home__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    top: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        color: #fff;
+        font-family: 'Dancing Script', cursive;
+        font-size: 5rem;
+    }
+
+    h4 {
+        color: #fff;
+        font-family: 'Dancing Script', cursive;
+        font-size: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.1rem;
+        text-align: center;
+        border: 1px solid #fff;
+        padding: .1em 1em;
+        margin-top: 1em;
+        transition:  all .5s ease-out;
+
+        &:hover {
+            letter-spacing: .1em;
+            color: #000;
+            background-color: #fff;
+            transition: all .5s ease-out;
+        }
+    }
+}
