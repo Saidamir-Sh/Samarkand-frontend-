@@ -21,11 +21,11 @@
                 <img src="./img/SAMARKAND.png" width="10%" alt="Logotip">
             </div>
             <ul class="navbar__links">
-                <li><a href="">Home</a></li>
+                <li><a href="">Strona główna</a></li>
                 <li><a href="">Menu</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="">O nas</a></li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Kontakt</a></li>
             </ul>
             <div class="hamburger">
                 <div class="line line-1"></div>
@@ -69,56 +69,179 @@
               <div class="home__content">
                   <h1>SAMARKAND</h1>
                   <h4>Restauracja Uzbecka</h4>
-                  <a href="#menu">Order online</a>
+                  <a href="#menu" class="btn-0">Zamów Online</a>
               </div>
         </article>
     </main>
     <!---/-/-/-/-/-/-/-/ END OF HOME CONTENT -/-/-/-/-/-/-/-/-/-->
 
+    <!--/-/-/-/-/-/-/-/-/ MENU /-/-/-/-/-/-/-/-/-/-/-->
+    <article>
+        <section id="menu-section" class="menu">
+            <div class="menu__header section__headers">
+                <h5>Najlepszy smak</h5>
+                <p>Nasze menu</p>
+            </div>
+            <div class="menu__items" style="padding: 2em 0em;">
+                <p style="color: tomato; text-align: center; font-size: 2rem;">Wkrótce</p>
+            </div> 
+        </section>
+    </article>
+    <!---/-/-/-/-/-/-/-/ END OF MENU -/-/-/-/-/-/-/-/-/-/ -->
 
     <!---/-/-/-/-/-/-/-/ ABOUT CONTENT -/-/-/-/-/-/-/-/-/-->
     <article>
         <section id="about-section" class="about"> 
+            <div class="about__header section__headers">
+                <h5>Co wiesz </h5>
+                <p>o Samarkandzie</p>
+            </div>
             <div class="about__icons">
                 <div class="icon">
                     <i class="far fa-clock"></i>
-                    <p>Fast</p>
+                    <p>Szybki</p>
                 </div>
                 <div class="icon">
                     <i class="fas fa-carrot"></i>
-                    <p>100% Organic</p>
+                    <p>100% Organiczny</p>
                 </div>
                 <div class="icon">
                     <i class="fas fa-utensils"></i>
-                    <p>Delicious</p>
+                    <p>Pyszne</p>
                 </div>
                 <div class="icon">
                     <i class="fas fa-user-check"></i>
-                    <p>Best Chefs</p>
+                    <p>Najlepszych Szefów</p>
                 </div>
             </div>
 
-            <!-- -/-/-/-/-/-/-/-/ REVIEWS & ABOUT TEXT -/-/-/-/-/-/-/-/-/-->
+            <!-- -/-/-/-/-/-/-/-/ LOGO & ABOUT TEXT -/-/-/-/-/-/-/-/-/-->
             <div class="about__content">
                 <div class="about__content-text">
                     <h3>Samarkand</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, itaque dolorem cupiditate distinctio neque saepe labore dolore aliquam praesentium voluptates iusto architecto ex perspiciatis at aperiam sit officiis doloribus molestias.</p>
+                    <p>Samarkanda – miasto w Uzbekistanie, w Azji Środkowej, ok. 540 tys. mieszkańców (2019). Czwarte pod względem ludności miasto Uzbekistanu i stolica wilajetu samarkandzkiego. Ważny ośrodek przemysłowy i naukowy (6 szkół wyższych). W 2001 roku miasto zostało wpisane na listę światowego dziedzictwa UNESCO. </p>
                 </div>
-
-                <!--REVIEWS-->
+                <!--LOGO-->
                 <div class="about__img">
-                  <img src="./img/SAMARKAND.png">
+                  <img src="./img/about-back.jpg">
                 </div>
+            </div>
         </section>
     </article>
-    <p style="text-align: center; color: tomato; font-size: 1.5rem;">Wkrótce</p>
 
     <!---/-/-/-/-/-/-/-/-/ GALLERY -/-/-/-/-/-/-/-/-/-/-/-->
     <article>
         <section id="gallery-section" class="gallery">
-            
+            <div class="gallery__header section__headers">
+                <h5>Zobacz nasze</h5>
+                <p>Potrawy i restauracje</p>
+            </div>
+            <div class="gallery__img">
+                <div class="img__col">
+                    <img src="./img/1g.jpg">
+                    <img src="./img/2g.jpg">
+                    <img src="./img/3g.jpg">
+                    <img src="./img/4g.jpg">
+                </div>
+                <div class="img__col">
+                    <img src="./img/5g.jpg">
+                    <img src="./img/6g.jpg">
+                    <img src="./img/7g.jpg">
+                    <img src="./img/8g.jpg">
+                </div>
+                <div class="img__col">
+                    <img src="./img/9g.jpg">
+                    <img src="./img/10g.jpg">
+                    <img src="./img/11g.jpg">
+                    <img src="./img/12g.jpg">
+                </div>
+            </div>
         </section>
     </article>
+    <!---/-/-/-/-/-/-/ END OF GALLERY-/-/-/-/-/-/-/-/-/-/-/-->
+
+    <!---/-/-/-/-/-/-/-/-/ CONTACT-/-/-/-/-/-/-/-/--/-/-/-/-/-->
+    <article>
+        <section id="contact-section" class="contact">
+            <div class="contact__header section__headers">
+                <h5>Czy masz pytania</h5>
+                <p>Skontaktuj się z nami</p>
+            </div>
+            <div class="contact__details">
+                <div class="details__box">
+                    <div class="details">
+                        <div class="details__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="detail__head">Dane Adresowe</h4>
+                        <div class="details__info">
+                            <p>Al.KEN 97, 02-777 Warszawa</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="details__icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4 class="detail__head">Dane Kontaktowe</h4>
+                        <div class="details__info">
+                            <p>Tel: +48695876136</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="details__icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <h4 class="detail__head">Godziny otwarte</h4>
+                        <div class="details__info">
+                            <label for="hours">Codziennie:</label><span class="arrow-down">&darr;</span>
+                            <select id="hours">
+                                <option selected>12–22</option>
+                                <option>Piątek, 12–23</option>
+                                <option>Sobota, 12–23</option>
+                                <option>Niedziela, 12–23</option>
+                            </select> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="details__map">
+                <h4 class="detail__head" style="text-align: center;">wyznacz trasę</h4>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2088.249577678784!2d21.029785454584992!3d52.15691456003866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719338e77248623%3A0x9dedad54b6770d98!2sRestauracja%20uzbecka%20Samarkand!5e0!3m2!1sen!2spl!4v1614793899772!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </article>
+    <!--/-/-/-/-/-/-/-/-/-/ END OF CONTACT -/-/-/-/-/-/-/-/-/-/-->
+
+    <footer>
+        <section id="footer-section" class="footer">
+            <div class="footer__info">
+                <div class="footer__info-logo">
+                    <img src="./img/SAMARKAND.png">
+                </div>
+                <div class="footer__info-adress">
+                    <h4>Samarkand restauracja uzbecka</h4>
+                    <p>Aleja Komisji Edukacji Narodowej 97, 02-777 Warszawa</p>
+                    <p>Tel: +48695876136</p>
+                </div>
+                <div class="footer__info-media">
+                   <p>Znajdź nas na : </p>
+                   <div class="info-media">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <ul class="footer__info-links">
+                    <li><a href=""><span>&#8811;</span>Strona główna</a></li>
+                    <li><a href=""><span>&#8811;</span>Menu</a></li>
+                    <li><a href=""><span>&#8811;</span>O nas</a></li>
+                    <li><a href=""><span>&#8811;</span>Galeria</a></li>
+                    <li><a href=""><span>&#8811;</span>Kontakt</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 
     <script src="./script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>

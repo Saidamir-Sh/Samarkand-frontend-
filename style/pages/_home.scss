@@ -1,6 +1,6 @@
 @import './partial-styles';
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 header {
     width: 100%; 
     overflow: hidden;
@@ -17,7 +17,7 @@ header {
    margin: 0 auto;
 }
 .navbar__links {
-    width: 30%;
+    width: 40%;
     right: 0em;
     position: absolute;
     display: flex;
@@ -80,10 +80,14 @@ header {
         color: #fff;
         font-size: 1.1rem;
         text-align: center;
-        border: 1px solid #fff;
-        padding: .1em 1em;
+        padding: .2em 1em;
         margin-top: 1em;
         transition:  all .5s ease-out;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
 
         &:hover {
             letter-spacing: .1em;

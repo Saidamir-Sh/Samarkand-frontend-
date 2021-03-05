@@ -1,0 +1,73 @@
+@import './partial-styles';
+
+.gallery {
+    width: 100%;
+    position: relative;
+    background-image: url("../img/gallery-back.jpg");
+    background-attachment: fixed;
+}
+.enableBlur > * {
+    filter: blur(8px);
+}  
+.disableBlur {
+    filter: blur(0);
+}/*
+.section__headers {
+    background-color: $black;
+    padding: 3em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     h5 {
+         font-size: 2rem;
+         color: $blue;
+        font-family: 'Dancing Script', cursive;
+     }
+     p {
+         color: #fff;
+         font-size: 2rem;
+         text-transform: uppercase;
+         &::after {
+             content: '';
+             display: block;
+             width: 200px;
+             margin: 0 auto;
+             height: 2px;
+             background-color: $blue;
+         }
+     }
+
+}*/
+.gallery__header,
+.menu__header,
+.about__header,
+.contact__header {
+    @include section__headers;
+}
+.gallery__img {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0em;
+}
+.img__col {
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: space-around;
+    
+    img {
+        width: 24%;
+        transition: all .5s ease-out;
+        &:hover {
+            transition: all .5s ease-out;
+            transform: scale(1.07);
+        }
+    }
+}
+.gallery__footer {
+    width: 100%;
+    padding: 3em 0em;
+    background-color: $black;
+}

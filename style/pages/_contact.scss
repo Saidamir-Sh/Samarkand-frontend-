@@ -1,0 +1,82 @@
+@import './partial-styles';
+
+.contact__details {
+    background-color: $black;
+}
+.details__box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0em;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    width: 30%;
+}
+.details__icon {
+    border: 2px solid $blue;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        color: $blue;
+        font-size: 2rem;
+    }
+}
+.details__info {
+    p {
+        color: $grey;
+    }
+}
+.detail__head {
+    color: $grey;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: .5em;
+}
+.details__info  {
+    position: relative;
+    label {
+        color: $grey;
+    }
+    select {
+        appearance: none;
+        background-color: $black;
+        border: none;
+        outline: none;
+        color: $grey;
+        }
+
+    option {
+        background-color: $black;
+    }
+}
+.arrow-down {
+    color: $grey;
+    position: absolute;
+    right: 4em;
+}
+.details__map {
+    background-color: $black;
+    padding-top: 1em;
+}
+.map {
+    padding-top: 1em;
+    padding-bottom: 0em;
+    width: 100%;
+    margin: 0 auto;
+
+    iframe {
+        height: 50vh;
+        width: 100%;
+    }
+}

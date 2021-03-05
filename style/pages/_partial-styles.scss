@@ -1,8 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @mixin glass {
     background: rgba( 182, 188, 233, 0.20 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 1.0px );
     -webkit-backdrop-filter: blur( 1.0px );
 }
+@mixin section__headers {
+    background-color: $black;
+    padding: 3em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     h5 {
+         font-size: 2rem;
+         color: $blue;
+        font-family: 'Dancing Script', cursive;
+     }
+     p {
+         color: #fff;
+         font-size: 2rem;
+         text-transform: uppercase;
+         &::after {
+             content: '';
+             display: block;
+             width: 200px;
+             margin: 0 auto;
+             height: 2px;
+             background-color: $blue;
+         }
+     }
 
+}
 $blue : #55A0C8;
+$black : #1D1D1B;
+$grey : rgb(94, 94, 94);
